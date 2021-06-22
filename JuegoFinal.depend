@@ -1,7 +1,11 @@
 # depslib dependency file v1.0
-1624245885 source:d:\personal\platzi\introduccion_c++\juegofinal\src\player.cpp
+1624336670 source:d:\personal\platzi\introduccion_c++\juegofinal\src\player.cpp
 	"Player.h"
 	<iostream>
 
-1624245770 d:\personal\platzi\introduccion_c++\juegofinal\include\player.h
+1624336732 d:\personal\platzi\introduccion_c++\juegofinal\include\player.h
+
+1624336703 source:d:\personal\platzi\introduccion_c++\juegofinal\main.cpp
+	<iostream>
+	"Player.h"
 

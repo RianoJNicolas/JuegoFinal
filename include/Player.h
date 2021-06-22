@@ -10,7 +10,7 @@ class Player
         void Callinput();
 
     protected:
-
+        int x, y;
     private:
 };
 

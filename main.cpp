@@ -5,7 +5,14 @@ using namespace std;
 
 int main()
 {
+    bool isGameOver = false;
     Player Hero;
-    Hero.Callinput();
+
+    cout << "inicia el juego" << endl;
+    while(isGameOver == false){
+        //Aquie es el loop de nuestro juego
+        Hero.Callinput();
+    }
+
     return 0;
 }
