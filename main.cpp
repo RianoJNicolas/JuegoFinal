@@ -13,8 +13,13 @@ int main()
 
     cout << "inicia el juego" << endl;
     while(isGameOver == false){
-        //Aquie es el loop de nuestro juego
+        //Aqui es el loop de nuestro juego
         Hero.Callinput();
+
+        // Aqui actualizamos la informacion del heroe en el mapa
+        Map.SetPlayerCell(Hero.x,Hero.y);
+
+        // Aqui dibujamos el mapa
         Map.Draw();
     }
 

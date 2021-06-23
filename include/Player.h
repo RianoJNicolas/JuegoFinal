@@ -8,9 +8,9 @@ class Player
         Player();
 
         void Callinput();
-
-    protected:
         int x, y;
+    protected:
+
     private:
 };
 

@@ -3,9 +3,9 @@
 	"Player.h"
 	<iostream>
 
-1624336732 d:\personal\platzi\introduccion_c++\juegofinal\include\player.h
+1624420793 d:\personal\platzi\introduccion_c++\juegofinal\include\player.h
 
-1624419656 source:d:\personal\platzi\introduccion_c++\juegofinal\main.cpp
+1624420715 source:d:\personal\platzi\introduccion_c++\juegofinal\main.cpp
 	<iostream>
 	"Player.h"
 	"MapCell.h"
@@ -17,6 +17,10 @@
 	"MapCell.h"
 	<iostream>
 
-1624419925 d:\personal\platzi\introduccion_c++\juegofinal\include\gamemap.h
+1624421013 d:\personal\platzi\introduccion_c++\juegofinal\include\gamemap.h
 	"MapCell.h"
+
+1624420631 source:d:\personal\platzi\introduccion_c++\juegofinal\src\gamemap.cpp
+	"GameMap.h"
+	<iostream>
 
