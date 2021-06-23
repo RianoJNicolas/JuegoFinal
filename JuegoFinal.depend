@@ -1,11 +1,22 @@
 # depslib dependency file v1.0
-1624336670 source:d:\personal\platzi\introduccion_c++\juegofinal\src\player.cpp
+1624336887 source:d:\personal\platzi\introduccion_c++\juegofinal\src\player.cpp
 	"Player.h"
 	<iostream>
 
 1624336732 d:\personal\platzi\introduccion_c++\juegofinal\include\player.h
 
-1624336703 source:d:\personal\platzi\introduccion_c++\juegofinal\main.cpp
+1624419656 source:d:\personal\platzi\introduccion_c++\juegofinal\main.cpp
 	<iostream>
 	"Player.h"
+	"MapCell.h"
+	"GameMap.h"
+
+1624419267 d:\personal\platzi\introduccion_c++\juegofinal\include\mapcell.h
+
+1624419655 source:d:\personal\platzi\introduccion_c++\juegofinal\src\mapcell.cpp
+	"MapCell.h"
+	<iostream>
+
+1624419925 d:\personal\platzi\introduccion_c++\juegofinal\include\gamemap.h
+	"MapCell.h"
 
