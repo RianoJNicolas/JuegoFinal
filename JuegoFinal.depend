@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1624336887 source:d:\personal\platzi\introduccion_c++\juegofinal\src\player.cpp
+1624508691 source:d:\personal\platzi\introduccion_c++\juegofinal\src\player.cpp
 	"Player.h"
 	<iostream>
 
@@ -17,10 +17,10 @@
 	"MapCell.h"
 	<iostream>
 
-1624421013 d:\personal\platzi\introduccion_c++\juegofinal\include\gamemap.h
+1624508745 d:\personal\platzi\introduccion_c++\juegofinal\include\gamemap.h
 	"MapCell.h"
 
-1624420631 source:d:\personal\platzi\introduccion_c++\juegofinal\src\gamemap.cpp
+1624508583 source:d:\personal\platzi\introduccion_c++\juegofinal\src\gamemap.cpp
 	"GameMap.h"
 	<iostream>
 

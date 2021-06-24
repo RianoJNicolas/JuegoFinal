@@ -18,6 +18,7 @@ class GameMap
 
 
     protected:
+        void LoadMapFromFile();
 
     private:
 };
