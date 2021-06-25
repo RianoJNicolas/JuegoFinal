@@ -11,7 +11,8 @@ int main()
     Player Hero;
     GameMap Map;
 
-    cout << "inicia el juego" << endl;
+    Map.DrawIntro();
+
     while(isGameOver == false){
         //Aqui es el loop de nuestro juego
         Hero.Callinput();
