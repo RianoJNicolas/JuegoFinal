@@ -23,10 +23,11 @@ void GameMap::Draw(){
 void GameMap::SetPlayerCell(int PlayerX, int PlayerY){
 
     if(PlayerCell != NULL){
-        PlayerCell->id=0;
+        PlayerCell->id = 0;
     }
+
     PlayerCell = &Cells[PlayerY][PlayerX];
-    PlayerCell->id = 3;
+    PlayerCell->id = '3';
     //cout << "Las coordenadas del jugador estan en: " << PlayerX << "," << PlayerY << endl;
 
 }
@@ -42,10 +43,25 @@ void GameMap::LoadMapFromFile(){
     }
 */
     string line;
+    int row = 0;
     ifstream MyFile("Map.txt");
 
     if(MyFile.is_open()){
 
+        while(getline(MyFile,line)){
+
+            for(int p = 0; p < line.length(); p++){
+                if(line[p]=='0'){
+                    Cells[row][p].id = 0;
+                }
+                else{
+                    Cells[row][p].id = line[p];
+                }
+            }
+
+            row++;
+
+        }
 
     }
     else{
