@@ -17,10 +17,18 @@ int main()
         Hero.Callinput();
 
         // Aqui actualizamos la informacion del heroe en el mapa
-        Map.SetPlayerCell(Hero.x,Hero.y);
+        if(Map.SetPlayerCell(Hero.x,Hero.y)){
+            // Aqui dibujamos el mapa
+            Map.Draw();
+        }
+        else{
+            Hero.ResetToSafePosition();
+            // Aqui dibujamos el mapa
+            Map.Draw();
+        }
 
-        // Aqui dibujamos el mapa
-        Map.Draw();
+
+
     }
 
     return 0;

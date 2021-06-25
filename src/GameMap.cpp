@@ -20,14 +20,21 @@ void GameMap::Draw(){
     }
 }
 
-void GameMap::SetPlayerCell(int PlayerX, int PlayerY){
+bool GameMap::SetPlayerCell(int PlayerX, int PlayerY){
+    if(Cells[PlayerY][PlayerX].isBlocked()==false){
 
-    if(PlayerCell != NULL){
-        PlayerCell->id = 0;
+        if(PlayerCell != NULL){
+            PlayerCell->id = 0;
+        }
+
+        PlayerCell = &Cells[PlayerY][PlayerX];
+        PlayerCell->id = '3';
+        return true;
+    }
+    else{
+       return false;
     }
 
-    PlayerCell = &Cells[PlayerY][PlayerX];
-    PlayerCell->id = '3';
     //cout << "Las coordenadas del jugador estan en: " << PlayerX << "," << PlayerY << endl;
 
 }

@@ -14,7 +14,7 @@ class GameMap
         void Draw();
 
         // Esta funcion obtiene las coordenadas de player y actualiza el mapa
-        void SetPlayerCell(int PlayerX, int PlayerY);
+        bool SetPlayerCell(int PlayerX, int PlayerY);
 
 
     protected:
