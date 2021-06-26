@@ -12,11 +12,12 @@ class GameMap
         MapCell Cells[15][10];
 
         void Draw();
+        void DrawIntro();
+        void DrawVictory();
 
         // Esta funcion obtiene las coordenadas de player y actualiza el mapa
         bool SetPlayerCell(int PlayerX, int PlayerY);
-
-        void DrawIntro();
+        bool isGameOver = false;
 
     protected:
         void LoadMapFromFile();

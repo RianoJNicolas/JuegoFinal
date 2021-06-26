@@ -5,7 +5,7 @@
 
 1624593846 d:\personal\platzi\introduccion_c++\juegofinal\include\player.h
 
-1624594446 source:d:\personal\platzi\introduccion_c++\juegofinal\main.cpp
+1624681641 source:d:\personal\platzi\introduccion_c++\juegofinal\main.cpp
 	<iostream>
 	"Player.h"
 	"MapCell.h"
@@ -17,10 +17,11 @@
 	"MapCell.h"
 	<iostream>
 
-1624594224 d:\personal\platzi\introduccion_c++\juegofinal\include\gamemap.h
+1624681629 d:\personal\platzi\introduccion_c++\juegofinal\include\gamemap.h
 	"MapCell.h"
 
-1624508583 source:d:\personal\platzi\introduccion_c++\juegofinal\src\gamemap.cpp
+1624681277 source:d:\personal\platzi\introduccion_c++\juegofinal\src\gamemap.cpp
 	"GameMap.h"
 	<iostream>
+	<fstream>
 

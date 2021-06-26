@@ -9,6 +9,7 @@ GameMap::GameMap()
     //ctor
     PlayerCell = NULL;
     LoadMapFromFile();
+    isGameOver = false;
 }
 
 void GameMap::Draw(){
@@ -23,12 +24,20 @@ void GameMap::Draw(){
 bool GameMap::SetPlayerCell(int PlayerX, int PlayerY){
     if(Cells[PlayerY][PlayerX].isBlocked()==false){
 
-        if(PlayerCell != NULL){
-            PlayerCell->id = 0;
+        if(Cells[PlayerY][PlayerX].id == '$'){
+            DrawVictory();
+            isGameOver = true;
+            return true;
+        }
+        else{
+            if(PlayerCell != NULL){
+                PlayerCell->id = 0;
+            }
+
+            PlayerCell = &Cells[PlayerY][PlayerX];
+            PlayerCell->id = '3';
         }
 
-        PlayerCell = &Cells[PlayerY][PlayerX];
-        PlayerCell->id = '3';
         return true;
     }
     else{
@@ -54,6 +63,24 @@ void GameMap::DrawIntro(){
     else{
         cout << "FATAL ERROR: INTRO COULD NOT BE LOADED" << endl;
     }
+}
+
+void GameMap::DrawVictory(){
+    string line;
+    int row = 0;
+    ifstream MyFile("Victory.txt");
+
+    if(MyFile.is_open()){
+
+        while(getline(MyFile,line)){
+            cout << line << endl;
+        }
+        cin >> line;
+    }
+    else{
+        cout << "FATAL ERROR: VICTORY COULD NOT BE LOADED" << endl;
+    }
+
 }
 
 void GameMap::LoadMapFromFile(){
